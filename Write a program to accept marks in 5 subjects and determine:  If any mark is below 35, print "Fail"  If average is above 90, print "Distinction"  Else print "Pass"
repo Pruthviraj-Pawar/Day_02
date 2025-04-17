@@ -1,0 +1,15 @@
+s1 = int(input("Enter sub 1 marks: "))
+s2 = int(input("Enter sub 2 marks: "))
+s3 = int(input("Enter sub 3 marks: "))
+s4 = int(input("Enter sub 4 marks: "))
+s5 = int(input("Enter sub 5 marks: "))
+
+average = (s1 + s2 + s3 + s4 + s5) / 5
+
+
+if (s1 < 35 or s2 < 35 or s3 < 35 or s4 < 35 or s5 < 35):                   # First check if any subject is failed
+    print("Fail")
+elif (average >= 90):
+    print("Distinction")
+else:
+    print("Pass")
